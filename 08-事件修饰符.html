@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="./vue/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <a href="https://www.baidu.com" @click.prevent="showInfo">点我到百度</a>
+    </div>
+    <script>
+        new Vue({
+            el: "#app",
+            methods: {
+                showInfo() {
+                    alert("同学你好呀！")
+                }
+            },
+        })
+    </script>
+</body>
+
+</html>
